@@ -1,0 +1,15 @@
+Name: qwe
+Age: 12
+Gender: f
+Seat No: 2
+---------------------------------
+Name: rttf
+Age: 234
+Gender: m
+Seat No: 3
+---------------------------------
+Name: asd
+Age: 12
+Gender: f
+Seat No: 4
+---------------------------------

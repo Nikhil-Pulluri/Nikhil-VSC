@@ -1,0 +1,20 @@
+Name: hima
+Age: 88
+Gender: <
+Seat No: 0
+---------------------------------
+Name: sai
+Age: 23
+Gender: F
+Seat No: 0
+---------------------------------
+Name: Rad
+Age: 65
+Gender: M
+Seat No: 50463490
+---------------------------------
+Name: seal
+Age: 22
+Gender: M
+Seat No: 50463490
+---------------------------------

@@ -1,0 +1,15 @@
+{
+    "cmake.configureOnOpen": false,
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "ostream": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp",
+        "iostream": "cpp"
+    },
+    "livePreview.defaultPreviewPath": "/Web_Development/HTML/pract.html"
+}

@@ -1,0 +1,140 @@
+Name: nik
+Age: 20
+Gender: m
+Seat No: 0
+---------------------------------
+Name: nik
+Age: 20
+Gender: mql3
+Seat No: 0
+---------------------------------
+Name: nik
+Age: 20
+Gender: male
+Seat No: 0
+---------------------------------
+Name: nik
+Age: 20
+Gender: male
+Seat No: 0
+---------------------------------
+Name: asd
+Age: 23
+Gender: makd
+Seat No: 0
+---------------------------------
+Name: praneeth
+Age: 12
+Gender: male
+Seat No: 0
+---------------------------------
+Name: adsf
+Age: 23
+Gender: Male
+Seat No: 0
+---------------------------------
+Name: asdfgdd
+Age: 12
+Gender: male
+Seat No: 0
+---------------------------------
+Name: praneet
+Age: 21
+Gender: male
+Seat No: 0
+---------------------------------
+Name: adi
+Age: 21
+Gender: male
+Seat No: 1
+---------------------------------
+Name: adsfgh
+Age: 123
+Gender: male
+Seat No: 2
+---------------------------------
+Name: lkjh
+Age: 32
+Gender: miler
+Seat No: 3
+---------------------------------
+Name: qwerty
+Age: 12
+Gender: female
+Seat No: 4
+---------------------------------
+Name: mnbv
+Age: 34
+Gender: mail
+Seat No: 5
+---------------------------------
+Name: poiuyu
+Age: 23
+Gender: makeer
+Seat No: 6
+---------------------------------
+Name: adcf
+Age: 99
+Gender: mail
+Seat No: 7
+---------------------------------
+Name: mck
+Age: 99
+Gender: mail
+Seat No: 8
+---------------------------------
+Name: asde
+Age: 23
+Gender: mal
+Seat No: 9
+---------------------------------
+Name: qwe
+Age: 23
+Gender: fem
+Seat No: 10
+---------------------------------
+Name: asdf
+Age: 23
+Gender: mil
+Seat No: 11
+---------------------------------
+Name: asdf
+Age: 34
+Gender: sdf
+Seat No: 12
+---------------------------------
+Name: okok
+Age: 23
+Gender: mkl
+Seat No: 13
+---------------------------------
+Name: mkol
+Age: 23
+Gender: lok
+Seat No: 14
+---------------------------------
+Name: darling
+Age: 12
+Gender: male
+Seat No: 0
+---------------------------------
+Name: aditya
+Age: 99
+Gender: male
+Seat No: 1
+---------------------------------
+Name: nik
+Age: 20
+Gender: male
+Seat No: 14
+---------------------------------
+Name: nik
+Age: 20
+Gender: male
+Seat No: 0
+---------------------------------
+Name: nik
+Age: 20
+Gender: m
+Seat No: 15
+---------------------------------

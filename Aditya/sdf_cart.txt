@@ -1,0 +1,5 @@
+Name: sdfv
+Age: 0
+Gender: df
+Seat No: 7
+---------------------------------

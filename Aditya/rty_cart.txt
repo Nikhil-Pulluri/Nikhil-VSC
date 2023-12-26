@@ -1,0 +1,10 @@
+Name: 345
+Age: 67
+Gender: h
+Seat No: 12
+---------------------------------
+Name: ertyu
+Age: 89
+Gender: rty
+Seat No: 13
+---------------------------------

@@ -1,0 +1,10 @@
+Name: qwe
+Age: 12
+Gender: m
+Seat No: 10
+---------------------------------
+Name: qwer
+Age: 34
+Gender: m
+Seat No: 11
+---------------------------------

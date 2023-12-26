@@ -1,0 +1,5 @@
+Name: asdfg
+Age: 0
+Gender: asdfg
+Seat No: 9
+---------------------------------

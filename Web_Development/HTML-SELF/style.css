@@ -1,0 +1,15 @@
+.head{
+    color:blueviolet
+}
+
+#center{
+    background:violet
+}
+
+#img{
+    background:wheat;
+}
+
+p[draggable]{
+    color:purple;
+}

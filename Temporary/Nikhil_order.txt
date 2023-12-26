@@ -1,0 +1,5 @@
+Order Details - Date: Mon Jun 26 14:01:31 2023
+Product Name: Oneplus Nord CE 2
+Price: 19999.00
+Description: 8gb Ram, 128 gb Rom
+---------------------------------

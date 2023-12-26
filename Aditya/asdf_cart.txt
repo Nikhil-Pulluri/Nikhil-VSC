@@ -1,0 +1,30 @@
+Name: aditya
+Age: 20
+Gender: male
+Seat No: 0
+---------------------------------
+Name: asd
+Age: 12
+Gender: asdf
+Seat No: 0
+---------------------------------
+Name: adi
+Age: 21
+Gender: male
+Seat No: 1
+---------------------------------
+Name: mikl
+Age: 31
+Gender: malew
+Seat No: 2
+---------------------------------
+Name: asdf
+Age: 43
+Gender: fae
+Seat No: 0
+---------------------------------
+Name: kils
+Age: 23
+Gender: male
+Seat No: 0
+---------------------------------

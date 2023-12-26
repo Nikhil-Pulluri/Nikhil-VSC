@@ -1,0 +1,5 @@
+Name: adi
+Age: 21
+Gender: male
+Seat No: 0
+---------------------------------

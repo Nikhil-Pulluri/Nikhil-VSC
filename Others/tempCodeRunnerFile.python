@@ -1,0 +1,27 @@
+def make_divisible_by_8(N):
+  """Finds a positive integer M (without leading zeroes) divisible by 8 formed by changing the minimum number of digits in N.
+
+  Args:
+    N: A positive integer.
+
+  Returns:
+    A positive integer M (without leading zeroes) divisible by 8 formed by changing the minimum number of digits in N.
+  """
+
+  # Check if the last three digits of N are divisible by 8.
+  if N % 8 == 0:
+    return N
+
+  # Find the largest power of 10 that is less than or equal to N.
+  num_digits = 1
+  while 10 ** num_digits <= N:
+    num_digits += 1
+
+  # Subtract the last three digits of N from N.
+  new_number = N // 10 ** (num_digits - 3)
+
+  # Add the largest multiple of 8 that is less than or equal to the new number to the new number.
+  new_number += 8 - (new_number % 8)
+
+  # Add the last three digits of N back to the new number.
+  return new_number * 10 ** (num_digits - 3) + N % 10 ** (num_digits - 3)

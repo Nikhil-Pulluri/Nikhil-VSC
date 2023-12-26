@@ -1,0 +1,35 @@
+#one{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#two{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#three{
+    font-family:serif;
+}
+
+#fourth{
+    font-family:sans-serif;
+    font-weight:bold
+}
+
+#fifth{
+    font-family:cursive
+}
+
+#head{
+    font-family:monospace;
+    font-weight:bold;
+    text-align:jusstify;
+}
+
+#seventh{
+    font-family:fantasy;
+    font-weight:bold;
+}
+
+html{
+    font-weight: bold;
+}

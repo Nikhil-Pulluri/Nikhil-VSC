@@ -1,0 +1,23 @@
+html{
+    font-size: xx-large;
+}
+
+head{
+    font-size: xx-large;
+}
+
+#first{
+    font-size: 20px;
+}
+
+#second{
+    font-size: 30pt;
+}
+
+#third{
+    font-size: 1em;
+}
+
+#fourth{
+    font-size: 1rem;
+}
