@@ -1,0 +1,23 @@
+/* Write your code here: */
+
+h1, h2{ /* Group */
+    color: blueviolet;
+}
+
+
+.box > p{  /*Child*/
+    color: firebrick; /*Ignored as per the position*/
+}
+
+.box li{  /*Descendant*/
+    color:violet;
+}
+
+li.done{ /*Chaining*/
+    color:seagreen;
+}
+
+ul p{
+    font-size: 0.5rem;
+}
+
