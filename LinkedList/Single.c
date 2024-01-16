@@ -6,6 +6,57 @@ struct node{
     struct node* next;
 };
 
+struct node* incre(struct node* head){
+    struct node* ptr = head;
+
+    int n = 0;
+
+    while(ptr!=NULL)
+    {
+        if(ptr==head)
+        {
+            n+=ptr->data;
+            ptr=ptr->next;
+        }
+
+        n=(n*10)+(ptr->data);
+        ptr=ptr->next;
+    }
+
+    n++; // target incremented 
+    int rem;
+    int k = 0;
+
+    while(n>0)
+    {
+        rem = n%10;
+        k = (k*10)+rem;
+
+        n=n/10;
+    }
+
+    ptr = head;
+
+    while(k>0)
+    {
+        if(ptr->next == NULL && k>9)
+        {
+            struct node* newn = malloc(sizeof(struct node));
+            ptr->next = newn;
+            newn->next = NULL;
+        }
+
+        rem = k%10;
+        ptr->data = rem;
+        k=k/10;
+        ptr=ptr->next;
+    }
+
+    return head;
+
+    // return k;
+}
+
 void print(struct node* head){
     struct node* ptr=head;
     while(ptr!=NULL){
@@ -204,7 +255,7 @@ int main(){
 
     print(merge(headA,headB));*/
 
-    print(head);
+    // print(head);
 
     //print(insertbeg(head));
 
@@ -225,13 +276,17 @@ int main(){
 
     
 
-    int k;
-    scanf("%d",&k);
+    // int k;
+    // scanf("%d",&k);
 
-    print(insertk(head,k));
+    // print(insertk(head,k));
 
     //print(delk(head,k));
 
     //freememory(head);
+
+    print(incre(head));
+
+    // printf("%d",l);
     return 0;
 }
