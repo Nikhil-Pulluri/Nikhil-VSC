@@ -1,3 +1,4 @@
+// Addition of polynomials using linked lists 
 #include<stdio.h>
 #include<stdlib.h>
 
