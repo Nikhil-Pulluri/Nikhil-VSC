@@ -1,6 +1,103 @@
 <!DOCTYPE html>
 <html>
+
+    <head>
+        <title>CSS applied pages</title>
+    </head>
+
+    <style>
+        html>*{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        html{
+            background-color: antiquewhite;
+        }
+
+        .heading{
+            background-color: peachpuff;
+            height: 40px;
+            width: fit-content;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .one{
+            padding: 20px;
+            background-color: skyblue;
+            width: 40%;
+            float: left;
+            margin-left: 30px;
+            border: 2px solid black;
+        }
+
+        .two{
+            padding: 20px;
+            background-color: lightcoral;
+            width: 40%;
+            float: right;
+            margin-right: 30px;
+            padding-bottom: 40px;
+            border: 2px solid black;
+        }
+
+        .three{
+            padding: 20px;
+            background-color: lightcoral;
+            width: 50%;
+            float:clear;
+            border: 2px solid black;
+        }
+
+        .one>p{
+            font-style: italic;
+        }
+
+        .two>p{
+            font-style: italic;
+        }
+    </style>
     <body>
-        <h1></h1>
+        <center><h1 class="heading">Web Technology</h1></center>
+
+        <div class="one">
+            <center><h2>HTML</h2></center>
+            <p>
+                HTML, known as Hypertext Markup Language, serves as the foundation for structuring content on the web. It organizes information hierarchically through elements, each defined by opening and closing tags. For example, paragraphs, headings, and dividers are represented by different tags, enclosing the respective content between them.
+            </p>
+
+            <p>
+                Attributes further enhance HTML elements by providing additional functionality or information. These attributes, embedded within opening tags, modify element behavior or appearance. Common attributes include class and id for styling, href for links, and src for media sources.
+            </p>
+
+            <p>
+                HTML5, the latest iteration, introduces new elements and features to improve web development. It includes multimedia elements, semantic markup, and form validation, enhancing its capabilities for building modern web applications.
+            </p>
+
+            <p>
+                When combined with CSS for styling and JavaScript for interactivity, HTML forms the foundation of web development. Together, they empower creators to build visually appealing, interactive, and responsive websites and applications.
+            </p>
+        </div>
+
+        <div class="two">
+            <center><h2>Cascading Style Sheets - CSS</h2></center>
+
+            <p>
+                CSS, or Cascading Style Sheets, is a styling language used to enhance the appearance of HTML elements on web pages. It works in conjunction with HTML to define the visual presentation of content, including layout, colors, fonts, and other design aspects.
+            </p>
+
+            <p>
+                CSS allows web developers to apply styles consistently across multiple HTML elements. By targeting specific elements or groups of elements, developers can control various aspects of their appearance, such as size, color, spacing, and alignment.
+            </p>
+
+            <p>
+                Selectors are used to target HTML elements and apply styles to them. Selectors can be based on element names, classes, IDs, or other attributes, enabling precise targeting of specific elements.
+            </p>
+
+            <p>
+                Properties and values define the actual styles applied to selected elements. Properties specify what aspect of the element's appearance to change, such as color for text color or font-size for font size. Values determine the specific characteristics of the property, such as red for the color property or 20px for the font-size property.
+            </p>
+        </div>
+        
     </body>
 </html>

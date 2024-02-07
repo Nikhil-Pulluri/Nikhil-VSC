@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Background Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('./modern-black-office-workspace-top-view-flat-lay-with-copy-space-black-background_67155-19840.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Additional styles for your content can be added here */
+        }
+
+        .content {
+            backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
+            padding: 20px;
+            border-radius: 10px;
+            /* Additional styles for your content can be added here */
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <!-- Your HTML content goes here -->
+    <h1>Hello, Blurred World!</h1>
+</div>
+
+</body>
+</html>

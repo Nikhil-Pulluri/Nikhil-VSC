@@ -1,4 +1,175 @@
 <!DOCTYPE html>
 <html>
+
+    <head>
+        <title>My Portfolio</title>
+    </head>
+
+    <style>
+
+        html{
+            background-image: url('./wallpaperflare.com_wallpaper\ \(1\).jpg');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            border: 5px solid black;
+            height: 100%;
+        }
+        
+        #name{
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .heading{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            font-weight: bolder;
+        }
+        h3{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .one{
+            float: right;
+            width: 50%;
+
+            padding-right: 100px;
+        }
+        .two{
+            float: left;
+            width: 50%;
+        }
+
+        .three{
+            float: right;
+            padding-top: 100px;
+            width: 50%;
+        }
+
+        .three>p{
+            padding-left: 70px;
+        }
+
+        .one>img{
+            float: right;
+        }
+
+        .one>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-align: right;
+            padding-right: 200px;
+            color: white;
+        }
+
+        .two>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-align: left;
+            padding-left: 100px;
+            padding-right: 100px;
+            color: white;
+        }
+
+        .three>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:x-large;
+            text-align: center;
+            padding-right: 100px;
+            color: white;
+        }
+
+        .form{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size:x-large; */
+            text-align: center;
+            color: white;
+            /* font-weight: bold; */
+        }
+
+        #table{
+            padding-left: 100px;;
+        }
+
+        table, th, td{
+            border: 5px solid white;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            text-align: center;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <center><h1 class="heading">My Portofolio</h1></center>
+    <div class="one">
+        <img src="./My Passport Size Photo.jpg" height="200px" draggable="true" style="float:right">
+        <p id="name">Nikhil Sri Ram Pulluri</p>
+        <p>Department of Computer Science and Engineering</p>
+    </div>
+
+    <div class="two">
+        <p>Hello, I'm Nikhil Pulluri, a dedicated full-time student pursuing a Bachelor of Technology (BTech) in Computer Science and Engineering (CSE) at SRM University, Amaravati. </p>
+
+        <div id="table">
+        <table>
+            <tr>
+                <th>Education</th>
+                <th>Institution</th>
+                <th>Passing Year</th>
+                <th>Marks Secured</th>
+            </tr>
+
+            <tr>
+                <td>Class 10</td>
+                <td>Anglo Indian EM School, Tadepalligudem</td>
+                <td>2019</td>
+                <td>10 CGPA</td>
+            </tr>
+
+            <tr>
+                <td>Class 12</td>
+                <td>Aditya Junior College, Tadepalligudem</td>
+                <td>2021</td>
+                <td>967/1000</td>
+            </tr>
+
+            <tr>
+                <td>CSE - BTech</td>
+                <td>SRM University, Amaravati</td>
+                <td>2022 - 2026</td>
+                <td>8.72 CGPA</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <div>
+        <form class="three">
+            <p>Subscribe to my News Letter here!</p>
+
+            <center><div>
+                <div class="form">Name: <input type="text"></div>
+        
+                <div class="form">Email: <input type="email"></div>
+        
+                <div class="form">Phone Number: <input type="number"></div>
+                
+                <fieldset style="width:50%">
+                    <legend  class="form"><center>Verification</center></legend>
+        
+                    <div class="form"><input type="checkbox">I'm not a robot</div>
+                </fieldset>
+        
+                <div class="form"><input type="submit"></div>
+                
+                </div></center>
+
+        </form>
+    </div>
     
 </html>
