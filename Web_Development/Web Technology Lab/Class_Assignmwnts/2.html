@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment in class</title>
+    </head>
+
+    <style>
+        #res{
+            border: 2px solid black;
+            width: 20%;
+        }
+    </style>
+
+    <body>
+        <center><form>
+            <div>Number 1: <input id="one" type="number"></div>
+            <div>Number 2: <input id="two" type="number"></div>
+            <p id="res">Result: </p>
+
+             <button onclick="add()">Add</button>
+            Subtract <button onclick="subtract()">Subtract</button>
+        </form></center>
+
+        <script >
+            function add() {
+    var num1 = parseFloat(document.getElementById('one').value);
+    var num2 = parseFloat(document.getElementById('two').value);
+    var result = num1 + num2;
+    document.getElementById('res').innerHTML = 'Result of addition: ' + result;
+}
+
+function subtract() {
+    var num1 = parseFloat(document.getElementById('one').value);
+    var num2 = parseFloat(document.getElementById('two').value);
+    var result = num1 - num2;
+    document.getElementById('res').innerText = 'Result of subtraction: ' + result;
+}
+        </script>
+    </body>
+</html>
