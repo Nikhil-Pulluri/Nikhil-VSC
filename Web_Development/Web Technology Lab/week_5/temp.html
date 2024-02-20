@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>week 5</title>
+    </head>
+
+    <Style>
+        .head{
+            background-color: bisque;
+            width:fit-content;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .submit{
+            background-color:lightsalmon;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+    </Style>
+
+    <body>
+        <center><h1 class="head">Registration Form</h1></center>
+
+        <form class="form">
+            <div id="name">Name: <input type="text"></div>
+            <div id="age">Age: <input type="number"></div>
+            <div id="email">Email: <input type="email"></div>
+            <div id="pin">Pincode: <input type="number"></div>
+            <div id="password">Password: <input type="password"></div>
+
+            <div><button type="submit" class="submit">Submit</button></div>
+
+        </form>
+    </body>
+
+    <script>
+        function validateForm() {
+        let name = document.getElementById("name").value.trim();
+        let age = parseInt(document.getElementById("age").value);
+        let email = document.getElementById("email").value.trim();
+        let pincode = document.getElementById("pin").value.trim();
+        let password = document.getElementById("password").value;
+
+        let isValid = true;
+
+        let nameRegex = /^[a-zA-Z\s]+$/;
+        if (!nameRegex.test(name)) {
+        document.getElementById("nameError").innerText = "Name should contain alphabets or spaces only";
+        isValid = false;
+        } else {
+        document.getElementById("nameError").innerText = "";
+        }
+
+        if (isNaN(age) || age < 18 || age > 60) {
+        document.getElementById("ageError").innerText = "Age should be between 18 and 60";
+        isValid = false;
+        } else {
+        document.getElementById("ageError").innerText = "";
+        }
+
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+        document.getElementById("emailError").innerText = "Invalid email format";
+        isValid = false;
+        } else {
+        document.getElementById("emailError").innerText = "";
+        }
+
+        let pincodeRegex = /^\d{6}$/;
+        if (!pincodeRegex.test(pincode)) {
+        document.getElementById("pincodeError").innerText = "PIN code should contain 6 digits";
+        isValid = false;
+        } else {
+        document.getElementById("pincodeError").innerText = "";
+        }
+
+
+        let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordRegex.test(password)) {
+        document.getElementById("passwordError").innerText = "Password should be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one digit, and one special character";
+        isValid = false;
+        } else {
+        document.getElementById("passwordError").innerText = "";
+        }
+
+        return isValid;
+        }
+    </script>
+</html>
+
+
+</script>

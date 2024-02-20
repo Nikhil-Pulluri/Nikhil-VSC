@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio edited
+        </title>
+    </head>
+
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+        }
+        .head{
+            text-align: center;
+            height: 20%;
+            background-color: antiquewhite;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cont{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .intro>p{
+            width: 40%;
+            text-align: justify;
+            padding: 20px;
+            background-color: skyblue;
+            border-radius: 5px;
+        }
+
+        .pic{
+            padding: 10px;
+        }
+
+        .pic>img{
+            height: 200px;
+        }
+
+        .table{
+            padding: 10px;
+        }
+
+        table, tr, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        td, th{
+            background-color: lightgray;
+        }
+
+        .three{
+            /* padding-top: 100px; */
+            width: 50%;
+        }
+
+        .three>p{
+            padding-left: 70px;
+        }
+
+        .three>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:x-large;
+            text-align: center;
+            padding-right: 100px;
+        }
+
+        .form{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size:x-large; */
+            text-align: center;
+            /* font-weight: bold; */
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-color: red;
+            }
+            50% {
+                border-color: blue;
+            }
+            100% {
+                border-color: green;
+            }
+            }
+
+            .sub {
+            border: 10px solid red; /* Initial border color */
+            animation: borderAnimation 3s infinite; /* Animation duration and loop */
+            width: fit-content;
+            }
+
+
+    </style>
+
+    <body>
+       <center> <h1 class="head">Portfolio Website</h1> </center>
+
+       <div class="cont">
+            <div class="intro">
+                <p>
+                    As an Intern, I would like to contribute my efforts and skills towards the primary
+                    objective of the team in which there could be hurdles and a lot of pressure. I aim
+                    to create a positive and productive work environment by communicating with
+                    team members, setting clear goals, and monitoring performance.
+                </p>
+            </div>
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Link</th>
+                    </tr>
+
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/nikhil-sri-ram-pulluri-03bb64211/" alt="LinkedIn">LinkedIn</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/Nikhil-Pulluri">GitHub</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="pic">
+                <img src="./My Passport Size Photo.jpg">
+            </div>
+       </div>
+
+       <center>   <div class="sub">
+
+            <form class="three">
+                <p>Subscribe to my News Letter here!</p>
+    
+                <center><div>
+                    <div class="form">Name: <input type="text"></div>
+            
+                    <div class="form">Email: <input type="email"></div>
+            
+                    <div class="form">Phone Number: <input type="number"></div>
+                    
+                    <fieldset style="width:50%">
+                        <legend  class="form"><center>Verification</center></legend>
+            
+                        <div class="form"><input type="checkbox">I'm not a robot</div>
+                    </fieldset>
+            
+                    <div><input type="submit"></div>
+                    
+                    </div></center>
+    
+            </form>
+           </div></center>
+       
+    </body>
+
+</html>
