@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title> 
+    <style>
+        body{
+            background-color: red;
+        }
+        /*@media not|only mediatype and (expressions){
+            css- code;
+        }--->syntax */
+        @media only screen and (orientation: landscape){ /* POTRAIT- height>width
+                                                            LANDSCAPE - width>height*/
+            body{
+                border: 2px solid black;
+            }
+        }
+        @media only screen and (max-width: 455px){ /blue until width is 455px and red when width>455px. Helps to make responsive design/
+            body{
+                background-color: aquamarine; 
+            }
+            .boxes{
+                flex-direction: column; /when width<455 vertically shown but when width>455 horizontally/ 
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello people!!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

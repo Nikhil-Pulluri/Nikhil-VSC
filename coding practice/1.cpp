@@ -12,3 +12,6 @@
 // after 2 pass, a[3] = {2,1,0}
 
 // Home work
+
+#include<iostream>
+using namespace 
