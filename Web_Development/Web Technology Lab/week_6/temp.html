@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+  
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #cdd0dd;
+    color: white;
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-weight: bold;
+}
+
+legend {
+  font-size: x-large;
+  text-align: center;
+  padding-bottom: 20px;
+}
+form {
+  /* background-color: #f7f7ff; */
+  background-color: rgba(120, 120, 120, 0.514);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  width: 300px;
+
+}
+form div {
+  padding-top: 10px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.256);
+  width: 100%;
+  padding: 8px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: #e0e0e043;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ffffff79;
+}
+
+.error {
+  color: red;
+}
+</style>
+
+<body>
+    <form id="registrationForm" onsubmit="validateForm(event)">
+        <legend>Registration Form</legend>
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="regno">Registration No.</label>
+        <input type="text" id="regno" name="regno" required>
+       
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="age">AGE</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="email" pattern="">Email ID</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pin" >PIN CODE</label>
+        <input type="number" id="pin" name="pin" required>
+
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" required>
+        <div>
+        <button type="submit" onclick="validateForm()">Register</button>
+    </div>
+    </form>
+
+
+    
+
+</body>
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+
+        const nameRegex = /^[a-zA-Z\s]+$/;
+        const age = document.getElementById('age').value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const pinRegex = /^\d{6}$/;
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const pin = document.getElementById('pin').value;
+        const password = document.getElementById('password').value;
+
+        const errorElement = document.getElementById('error-message');
+        errorElement.innerHTML = '';
+        if (!nameRegex.test(name)) {
+            showError('Name should contain alphabets or spaces only.');
+        }
+        console.log("asdfasdfaasdfasdfasdfasdf");
+        
+        if (age < 18 || age > 60) {
+            showError('Age should be between 18 and 60.');
+        }
+
+        if (!emailRegex.test(email)) {
+            showError('Invalid email format.');
+        }
+
+        if (!pinRegex.test(pin)) {
+            showError('PIN code should contain 6 digits only.');
+        }
+
+        if (!passwordRegex.test(password)) {
+            showError('Password should have at least 8 characters, one lowercase letter, one uppercase letter, one digit, and one special character.');
+        }
+
+        // If no errors, submit the form (you can replace this with actual form submission logic)
+        if (errorElement.innerHTML === '') {
+            document.getElementById('registrationForm').submit();
+            console.log("qwerqerqwerqwerqwerqwerqwe");
+
+        }
+    }
+
+    function showError(message) {
+        const errorElement = document.getElementById('error-message');
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error';
+        errorDiv.textContent = message;
+        errorElement.appendChild(errorDiv);
+
+
+    }
+    
+</script>
+</html>

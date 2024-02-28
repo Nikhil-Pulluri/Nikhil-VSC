@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factorial Sum Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  p {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Factorial Sum Calculator</h2>
+
+<label for="number">Enter a number:</label>
+<input type="number" id="numberInput">
+<button onclick="calculateFactorialSum()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculateFactorial(n) {
+  let factorial = 1;
+  for (let i = 2; i <= n; i++) {
+    factorial *= i;
+  }
+  return factorial;
+}
+
+function calculateFactorialSum() {
+  const numberInput = document.getElementById('numberInput').value;
+  let sum = 0;
+  const digits = numberInput.toString().split('');
+
+  for (let i = 0; i < digits.length; i++) {
+    const digit = parseInt(digits[i]);
+    const factorial = calculateFactorial(digit);
+    sum += factorial;
+  }
+
+  const resultElement = document.getElementById('result');
+  resultElement.textContent = `Sum of factorial of each digit: ${sum}`;
+}
+</script>
+
+</body>
+</html>

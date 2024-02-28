@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCD Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  p {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>GCD Calculator</h2>
+
+<label for="number1">Enter first number:</label>
+<input type="number" id="number1Input">
+<label for="number2">Enter second number:</label>
+<input type="number" id="number2Input">
+<button onclick="calculateGCD()">Calculate GCD</button>
+
+<p id="result"></p>
+
+<script>
+function calculateGCD() {
+  const number1 = parseInt(document.getElementById('number1Input').value);
+  const number2 = parseInt(document.getElementById('number2Input').value);
+  const gcd = findGCD(number1, number2);
+  document.getElementById('result').textContent = `GCD of ${number1} and ${number2} is: ${gcd}`;
+}
+
+function findGCD(a, b) {
+  if (b === 0) {
+    return a;
+  } else {
+    return findGCD(b, a % b);
+  }
+}
+</script>
+
+</body>
+</html>

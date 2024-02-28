@@ -1,0 +1,30 @@
+# def check(s,t):
+#     if sorted(s) == sorted(t):
+#         return("True")
+#     else:
+#         return("False")
+# s = input()
+# t = input()
+# print(check(s,t))
+
+
+
+def check(s, t):
+    if sorted(s) == sorted(t):
+        return True
+    else:
+        return False
+
+s = input()
+t = input()
+print(check(s, t))
+
+# def maxsum(nums):
+#     cs = ms = nums[0]
+#     for i in nums[1:]:
+#         cs = max(i,cs+i)
+#         ms = max(ms,cs)
+#     return ms
+# n = int(input())
+# nums = list(map(int, input().split()))
+# print(maxsum(nums))
