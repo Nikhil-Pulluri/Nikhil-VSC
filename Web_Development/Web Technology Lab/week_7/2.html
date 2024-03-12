@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Updated DOM Manipulation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: lightcoral;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM Manipulation Example</h1>
+    <div class="box">Square 1</div>
+    <div class="box">Square 2</div>
+    <div class="box">Square 3</div>
+    <p>This is a paragraph.</p> 
+<span>This is a span.</span> 
+<button id="btn">Click here to manipulate the DOM</button>
+
+    <script> $('#btn').click(function () { var startTime = performance.now(); $('.box').each(function () { $(this).css('background-color', 'lightyellow'); }); var endTime = performance.now(); var executionTime = endTime - startTime; console.log('Execution time: ' + executionTime + ' milliseconds'); }); </script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        .faculty,
+        .courseid {
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>09:00 - 09:30</th>
+                <th>09:31 - 10:00</th>
+                <th>10:01 - 10:30</th>
+                <th>10:31 - 11:00</th>
+                <th>11:01 - 11:30</th>
+                <th>11:31 - 12:00</th>
+                <th>12:01 - 12:30</th>
+                <th>12:31 - 01:00</th>
+                <th>01:01 - 01:30</th>
+                <th>01:31 - 02:00</th>
+                <th>02:01 - 02:30</th>
+                <th>02:31 - 03:00</th>
+                <th>03:01 - 03:30</th>
+                <th>03:31 - 04:00</th>
+                <th>04:01 - 04:30</th>
+                <th>04:31 - 05:00</th>
+                <th>05:01 - 05:30</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>Monday</th>
+            <td>CSE 210(W 604)</td>
+            <td>CSE 210(W 604)</td>
+            <td>CSE 210(W 604)</td>
+            <td>CSE 210(W 604)</td>
+            <td>MAT 370(W 405)</td>
+            <td>MAT 370(W 405)</td>
+            <td></td>
+            <td></td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 209(S 303)</td>
+            <td>CSE 209(S 303)</td>
+            <td>CSE 207(S 303)</td>
+            <td>CSE 207(S 303)</td>
+            <td>CSE 207(S 303)</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td></td>
+            <td></td>
+            <td>CSE 209(S 303)</td>
+            <td>CSE 209(S 303)</td>
+            <td>CSE 209(S 303)</td>
+            <td>CSE 209(S 303)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>CSE 210(S 613)</td>
+            <td>CSE 210(S 613)</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>CSE 207(S 603)</td>
+            <td>CSE 207(S 603)</td>
+            <td>CSE 207(S 603)</td>
+            <td>CSE 207(S 603)</td>
+            <td></td>
+            <td></td>
+            <td>CSE 208(S 303)</td>
+            <td>CSE 208(S 303)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>CSE 208(S 303)</td>
+            <td>CSE 208(S 303)</td>
+            <td>CSE 208(S 303)</td>
+            <td>CSE 208(S 303)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td>CSE 206(C 405)</td>
+            <td></td>
+            <td></td>
+            <td>MAT 370(W 405)</td>
+            <td>MAT 370(W 405)</td>
+            <td>MAT 370(W 405)</td>
+            <td>MAT 370(W 405)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>CSE 209(S 202)</td>
+            <td>CSE 209(S 202)</td>
+            <td>CSE 209(S 202)</td>
+            <td>CSE 209(S 202)</td>
+            <td></td>
+            <td></td>
+            <td>CSE 207(S 303)</td>
+            <td>CSE 207(S 303)</td>
+            <td>CSE 207(S 303)</td>
+            <td>CSE 210(S 303)</td>
+            <td>CSE 210(S 303)</td>
+            <td>CSE 210(S 303)</td>
+            <td>CSE 210(S 303)</td>
+        </tr>
+        </tr>
+    </table><br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Couse id</th>
+                <th>Course Name</th>
+                <th>Faculty</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="courseid">CSE 207</td>
+            <td>Design And Analysis Of Algorithms</td>
+            <td class="faculty">Dr. B. Deepak Raj</td>
+        </tr>
+        <tr>
+            <td class="courseid">CSE 208</td>
+            <td>Probability And Statistics</td>
+            <td class="faculty">Dr. Repaka Subha Sandeep</td>
+        </tr>
+        <tr>
+            <td class="courseid">CSE 209</td>
+            <td>Data Base Management System</td>
+            <td class="faculty">Dr. Priyanka</td>
+        </tr>
+        <tr>
+            <td class="courseid">CSE 210</td>
+            <td>Web Technology</td>
+            <td class="faculty">Dr. Hemanth Kumar</td>
+        </tr>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function () {
+            // Add click event handler for faculty names
+            $('.faculty').click(function () {
+                // Get the URL to redirect based on faculty name
+                var facultyName = $(this).text().trim();
+                var redirectURL = getFacultyURL(facultyName);
+                if (redirectURL) {
+                    window.location.href = redirectURL;
+                } else {
+                    console.log("URL not found for faculty: " + facultyName);
+                }
+            });
+
+            // Function to get the URL to redirect based on faculty name
+            function getFacultyURL(facultyName) {
+                switch (facultyName) {
+                    case 'Dr. B. Deepak Raj':
+                        return 'https://srmap.edu.in/faculty/basina-deepakraj/';
+                    case 'Dr. Repaka Subha Sandeep':
+                        return 'https://srmap.edu.in/faculty/repaka-subha-sandeep/';
+                    case 'Dr. Priyanka':
+                        return 'https://srmap.edu.in/faculty/dr-priyanka/';
+                    case 'Dr. Hemanth Kumar':
+                        return 'https://srmap.edu.in/faculty/dr-hemantha-kumar-kalluri/';
+                    default:
+                        return null;
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            // Add click event handler for course ids
+            $('.courseid').click(function () {
+                // Get the URL to redirect based on course id
+                var courseid = $(this).text().trim();
+                var redirectURL = getCourseURL(courseid);
+                if (redirectURL) {
+                    window.location.href = redirectURL;
+                } else {
+                    console.log("URL not found for course id: " + courseid);
+                }
+            });
+
+            // Function to get the URL to redirect based on course id
+            function getCourseURL(courseid) {
+                switch (courseid) {
+                    case 'CSE 207':
+                        return 'https://docs.google.com/document/d/1vgh4qEuDRUx217v9iNKn4WagkR8-J8lqbfeTptYLj88/edit';
+                    case 'CSE 208':
+                        return 'https://docs.google.com/document/d/1rR-OSDl93VRe7wMy8vRRR1tPvC8iMYD7NcO0gSStIK0/edit';
+                    case 'CSE 209':
+                        return 'https://docs.google.com/document/d/1M22IfHM7sbaEWVzTka6irtjF9yJxAiMnmkAbZ-2fZuY/edit';
+                    case 'CSE 210':
+                        return 'https://docs.google.com/document/d/1XHV0MNArTdLzxVWGoXw7GxPApGdX1nWJid0J8lnWGTk/edit';
+                    default:
+                        return null;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
